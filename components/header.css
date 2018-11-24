@@ -1,0 +1,129 @@
+.header {
+  padding: 32px 0;
+  font-family: "Circe", sans-serif;
+  color: #fff;
+  background-color: #181818;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 24px 0;
+  }
+}
+
+.header--inverted {
+  color: #000;
+  background-color: #fff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-visualGroup {
+  flex: 0 0 120px;
+  max-width: 120px;
+}
+
+.header-contentGroup {
+  flex: 0 0 auto;
+}
+
+.header-auxiliaryMenu {
+  display: inline-block;
+  margin: 0;
+  margin-right: 320px;
+  padding: 0;
+  vertical-align: middle;
+  cursor: default;
+}
+
+@media (max-width: 1240px) {
+  .header-auxiliaryMenu {
+    margin-right: 240px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-auxiliaryMenu {
+    display: none;
+  }
+}
+
+.header-auxiliaryItem {
+  display: inline-block;
+  margin-right: 64px;
+  list-style: none;
+}
+
+.header-auxiliaryItem:last-child {
+  margin-right: 0;
+}
+
+.header-auxiliaryLink {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  outline: none;
+}
+
+.header-auxiliaryLink::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #fff;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transition: left 0.2s ease-out, right 0.2s ease-out;
+}
+
+.header-auxiliaryLink:hover.header-auxiliaryLink::before {
+  left: 0;
+  right: 0;
+}
+
+.header-auxiliaryLink:focus.header-auxiliaryLink::before {
+  left: 0;
+  right: 0;
+}
+
+.header-auxiliaryLink:active {
+}
+
+.header-menuDesktop {
+  display: inline-block;
+  margin-right: 120px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1100px) {
+  .header-menuDesktop {
+    display: none;
+  }
+}
+
+.header-menuMobile {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .header-menuMobile {
+    display: block;
+  }
+}
+
+.header-localization {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 1100px) {
+  .header-localization {
+    display: none;
+  }
+}

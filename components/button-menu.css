@@ -1,0 +1,54 @@
+.buttonMenu {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: currentColor;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonMenu--inverted {
+  color: #181818;
+}
+
+.buttonMenu-icon {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 10px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.buttonMenu-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.buttonMenu-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.buttonMenu-text {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}

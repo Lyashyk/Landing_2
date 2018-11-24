@@ -1,0 +1,110 @@
+.banner {
+  position: relative;
+  height: 100%;
+  background-image: url(../assets/images/bg.jpg);
+  background-size: cover;
+}
+
+.banner-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #181818;
+  opacity: 0.7;
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 10;
+}
+
+.banner-companyFace {
+  padding: 240px 320px 0;
+}
+
+@media (max-width: 1400px) {
+  .banner-companyFace {
+    padding: 200px 240px 0;
+  }
+}
+
+@media (max-width: 1320px) {
+  .banner-companyFace {
+    padding: 160px 200px 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .banner-companyFace {
+    padding: 0 140px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 840px) {
+  .banner-companyFace {
+    padding: 0 16px;
+  }
+}
+
+.banner-ourProjects {
+  align-self: flex-end;
+  width: 1600px;
+  position: relative;
+  animation-name: projects;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  transition: width 0.5s 1.8s ease-out;
+}
+
+.banner-ourProjects--hidden {
+  display: none;
+}
+
+@media (max-width: 1640px) {
+  .banner-ourProjects {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .banner-ourProjects {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .banner-ourProjects {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .banner-ourProjects {
+    width: 100%;
+    animation: none;
+    transition: none;
+  }
+}
+
+.banner-ourProjects--expanded {
+  width: 100%;
+}
+
+@keyframes projects {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

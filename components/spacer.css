@@ -1,0 +1,28 @@
+.spacer {
+  display: none;
+  position: absolute;
+  height: 128px;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition: height 1s ease-out;
+}
+
+.spacer--visible {
+  display: block;
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  from {
+    height: 128px;
+  }
+  to {
+    height: 100vh;
+  }
+}

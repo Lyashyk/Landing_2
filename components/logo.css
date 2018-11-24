@@ -1,0 +1,23 @@
+.logo {
+}
+
+.logo--inverted {
+}
+
+.logo-image {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.logo--inverted .logo-image {
+  display: none;
+}
+
+.logo-invertedImage {
+  display: none;
+}
+
+.logo--inverted .logo-invertedImage {
+  display: inline-block;
+}

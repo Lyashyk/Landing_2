@@ -1,0 +1,44 @@
+.buttonIcon {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff2323;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.3s ease-out;
+}
+
+@media (max-width: 480px) {
+  .buttonIcon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.buttonIcon:hover {
+  background-color: #ff5c5c;
+}
+
+.buttonIcon:focus {
+  background-color: #ff5c5c;
+}
+
+.buttonIcon:active {
+  background-color: #ff0a0a;
+}
+
+.buttonIcon-icon {
+  width: 18px;
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .buttonIcon-icon {
+    width: 16px;
+  }
+}

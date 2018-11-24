@@ -1,0 +1,48 @@
+.buttonLocalization {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  color: currentColor;
+}
+
+.buttonLocalization-text {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  vertical-align: middle;
+  font-family: "Circe", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.buttonLocalization--inverted .buttonLocalization-text {
+  color: #181818;
+}
+
+@media (max-width: 800px) {
+  .buttonLocalization-text {
+    font-size: 10px;
+  }
+}
+
+.buttonLocalization-arrow {
+  width: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .buttonLocalization-arrow {
+    width: 8px;
+    transform: translateY(-2px);
+  }
+}
+
+.battonLocalization-icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}

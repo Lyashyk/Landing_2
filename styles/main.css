@@ -1,0 +1,337 @@
+@import "../components/header.css";
+@import "../components/container.css";
+@import "../components/logo.css";
+@import "../components/button-localization.css";
+@import "../components/button-menu.css";
+@import "../components/banner.css";
+@import "../components/button-icon.css";
+@import "../components/side-panel.css";
+@import "../components/main-screen.css";
+@import "../components/hidden-screen.css";
+@import "../components/project-group.css";
+@import "../components/project.css";
+@import "../components/company-face.css";
+@import "../components/our-projects.css";
+@import "../components/arrow-down.css";
+@import "../components/hamburger.css";
+@import "../components/arrow-right.css";
+@import "../components/spacer.css";
+@import "../components/icon-quotes.css";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #868686;
+  font-family: "Proxima Nova Rg", sans-serif;
+}
+
+@font-face {
+  font-family: "Circe Extra";
+  src: url("../assets/fonts/circle/Circe-ExtraBold.woff2") format("woff2"),
+    url("../assets/fonts/circle/Circe-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../assets/fonts/circle/Circe-Regular.woff2") format("woff2"),
+    url("../assets/fonts/circle/Circe-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../assets/fonts/circle/Circe-Light.woff2") format("woff2"),
+    url("../assets/fonts/circle/Circe-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe Extra";
+  src: url("../assets/fonts/circle/Circe-ExtraLight.woff2") format("woff2"),
+    url("../assets/fonts/circle/Circe-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../assets/fonts/circle/Circe-Regular.woff2") format("woff2"),
+    url("../assets/fonts/circle/Circe-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../assets/fonts/circle/Circe-Bold.woff2") format("woff2"),
+    url("../assets/fonts/circle/Circe-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../assets/fonts/Bahnschrift/Bahnschrift.woff2") format("woff2"),
+    url("../assets/fonts/Bahnschrift/Bahnschrift.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNovaT-Thin.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Light.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-ThinIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-ThinIt.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-ExtrabldIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-ExtrabldIt.woff")
+      format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-SemiboldIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-SemiboldIt.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Extrabld.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-LightIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-BlackIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Semibold.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-RegularIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-RegularIt.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Black.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-BoldIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Semibold.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-SemiboldIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-SemiboldIt.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-LightIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Light.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-BlackIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNovaT-Thin.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Extrabld.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-RegularIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-RegularIt.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-BoldIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Black.woff2")
+      format("woff2"),
+    url("ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-ExtrabldIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-ExtrabldIt.woff")
+      format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-ThinIt.woff2")
+      format("woff2"),
+    url("../assets/fonts/ProximaNova/ProximaNova-ThinIt.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}

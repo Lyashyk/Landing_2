@@ -1,0 +1,50 @@
+.sidePanel {
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  font-family: "Circe", sans-serif;
+  background-color: #181818;
+}
+
+.sidePanel-contactList {
+  margin: 0;
+  padding: 0;
+  writing-mode: vertical-lr;
+}
+
+.sidePanel-contactItem {
+  display: inline-block;
+  margin-bottom: 64px;
+  list-style: none;
+  transform: rotate(90deg);
+}
+
+.sidePanel-contactItem:last-child {
+  margin-bottom: 0;
+}
+
+.sidePanel-contactButton {
+  display: inline-block;
+  padding: 4px;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s ease-out;
+}
+
+.sidePanel-contactButton:hover {
+  color: #d6d6d6;
+}
+
+.sidePanel-contactButton:focus {
+  color: #d6d6d6;
+}
+
+.sidePanel-contactButton:active {
+  color: #fff;
+}

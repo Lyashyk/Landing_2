@@ -1,0 +1,95 @@
+.mainScreen {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .mainScreen {
+    position: static;
+  }
+}
+
+.mainScreen-header {
+  position: relative;
+  z-index: 100;
+}
+
+.mainScreen-header--hidden {
+  display: none;
+}
+
+.mainScreen-header--visible {
+  display: block;
+  animation-name: appearance;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media (max-width: 1100px) {
+  .mainScreen-header {
+    position: static;
+  }
+}
+
+.mainScreen-sidePanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.mainScreen-sidePanel--hidden {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .mainScreen-sidePanel {
+    display: none;
+  }
+}
+
+.mainScreen-banner {
+  height: calc(100vh - 105px);
+}
+
+@media (max-width: 1100px) {
+  .mainScreen-banner {
+    height: calc(100vh - 89px);
+  }
+}
+
+.mainScreen-banner--hidden {
+  display: none;
+}
+
+.mainScreen-projectGroup {
+  display: none;
+  height: calc(100vh - 115px);
+}
+
+@media (max-width: 1100px) {
+  .mainScreen-projectGroup {
+    height: calc(100vh - 95px);
+  }
+}
+
+@media (max-width: 840px) {
+  .mainScreen-projectGroup {
+    height: 100%;
+  }
+}
+
+.mainScreen-projectGroup--visible {
+  display: block;
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,169 @@
+.companyFace {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+}
+
+@media (max-width: 840px) {
+  .companyFace {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .companyFace {
+    display: block;
+  }
+}
+
+.companyFace-titleGroup {
+  flex: 0 0 480px;
+  max-width: 480px;
+}
+
+@media (max-width: 1100px) {
+  .companyFace-titleGroup {
+    max-width: none;
+  }
+}
+
+.companyFace-description {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .companyFace-description {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .companyFace-description {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.companyFace-title {
+  position: relative;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.companyFace-titleImage {
+  position: absolute;
+  left: -100px;
+  top: 0;
+}
+
+@media (max-width: 840px) {
+  .companyFace-titleImage {
+    display: none;
+  }
+}
+
+.companyFace-titleText {
+  position: relative;
+  max-width: 480px;
+  font-family: "Circe", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 840px) {
+  .companyFace-titleText {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 640px) {
+  .companyFace-titleText {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .companyFace-titleText {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 420px) {
+  .companyFace-titleText {
+    font-size: 26px;
+  }
+}
+
+.companyFace-dateGroup {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1320px) {
+  .companyFace-dateGroup {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .companyFace-dateGroup {
+    display: none;
+  }
+}
+
+.companyFace-date {
+}
+
+.companyFace-day {
+  display: inline-block;
+  font-size: 48px;
+  margin-right: 16px;
+  line-height: 1;
+}
+
+.companyFace-dateSeparator {
+  display: inline-block;
+  padding-top: 4px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.companyFace-month {
+  display: inline-block;
+  padding-top: 4px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.companyFace-iconGroup {
+}
+
+@media (max-width: 1320px) {
+  .companyFace-iconGroup {
+    display: none;
+  }
+}
+
+.companyFace-line {
+  display: inline-block;
+  width: 44px;
+  height: 1px;
+  margin-right: 8px;
+  background: linear-gradient(to right, #ff2323 80%, #fff 80%);
+  vertical-align: middle;
+}
+
+.companyFace-arrow {
+  width: 20px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,217 @@
+.ourProjects {
+  padding: 40px 80px;
+  font-family: "Circle", sans-serif;
+  background-color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .ourProjects {
+    padding: 24px 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ourProjects {
+    padding: 16px 24px;
+  }
+}
+
+.ourProjects-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-grid {
+    margin: -24px;
+  }
+}
+
+.ourProjects-column {
+  flex: 0 0 200px;
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-column {
+    flex: 0 0 auto;
+    padding: 24px;
+  }
+}
+
+.ourProjects-column--project {
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-column--project {
+    flex: 1 1 auto;
+    padding: 24px;
+  }
+}
+
+.ourProjects-column--statistics {
+  flex: 0 0 200px;
+  max-width: 200px;
+}
+
+@media (max-width: 840px) {
+  .ourProjects-column--statistics {
+    display: none;
+  }
+}
+
+.ourProjects-title {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #070707;
+  text-transform: uppercase;
+  animation-name: entering;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-title {
+    animation: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-title {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 840px) {
+  .ourProjects-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ourProjects-title {
+    font-size: 14px;
+  }
+}
+
+.ourProjects-title--exiting {
+  animation-name: exiting;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  opacity: 1;
+}
+
+.ourProjects-statistics {
+  font-family: "Proxima Nova", sans-serif;
+  color: #868686;
+  animation-name: entering;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-statistics {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.ourProjects-statistics--first {
+  animation-delay: 2.5s;
+}
+
+.ourProjects-statistics--first.ourProjects-statistics--exiting {
+  animation-delay: 0.5s;
+}
+
+.ourProjects-statistics--second {
+  animation-delay: 3s;
+}
+
+.ourProjects-statistics--second.ourProjects-statistics--exiting {
+  animation-delay: 1s;
+}
+
+.ourProjects-statistics--exiting {
+  animation-name: exiting;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  opacity: 1;
+}
+
+.ourProjects-button {
+  animation-name: appearance;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media (max-width: 1100px) {
+  .ourProjects-button {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.ourProjects-button--exiting {
+  animation-name: disappearance;
+  animation-duration: 0.2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@media (max-width: 840px) {
+  .ourProjects-button--exiting {
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes entering {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exiting {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disappearance {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
